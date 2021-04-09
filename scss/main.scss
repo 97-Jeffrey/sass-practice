@@ -1,0 +1,31 @@
+$myfont: Helvetica;
+$size: 20px;
+$h1-color: rgb(75, 73, 73);
+$warning-padding: 10px;
+$warning-border: 20px;
+$warning-color: rgb(214, 81, 81);
+
+body {
+  font-family: $myfont;
+  font-size: $size;
+}
+
+h1 {
+  color: $h1-color;
+}
+
+.alert {
+  border: 2px solid;
+  padding: $warning-padding;
+  border-radius: $warning-border;
+}
+
+.alert-info {
+  @extend .alert;
+  color: rgb(56, 56, 236);
+}
+
+.alert-warning {
+  @extend .alert;
+  color: rgb(214, 81, 81);
+}
